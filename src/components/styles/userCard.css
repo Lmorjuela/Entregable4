@@ -1,0 +1,86 @@
+.userCard{
+    box-shadow: var(--shadow_userCard);
+    width:350px;
+}
+
+.name_person{
+    text-align: center;
+    font-size: 1.6rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding-left: 1rem;
+}
+
+.item_email{
+    color: var(--color_gray_text);
+    font-weight: 500;
+}
+
+.span_item_email{
+    font-weight: 600;
+    padding-left: 0.5rem;
+}
+
+.item_regalo{
+    display: flex;
+    align-items: center;
+}
+
+.item_birthday{
+    color: var(--color_gray_text);
+    font-weight: 500;
+}
+
+.span_item_birthday{
+    padding-left: 0.5rem;
+    font-weight: 600;
+}
+
+.iconos_footer{
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+}
+
+.btn_trash{
+    border-radius: 2px;
+    border-width: 1px;
+    border-color:rgba(252, 48, 48, 0.837) ;
+    background-color: rgba(252, 48, 48, 0.837);
+    padding: 4px;
+    cursor: pointer;
+}
+
+.bx-trash{
+    font-size: 1.7rem;
+    color: white;
+}
+
+.btn_edit{
+    padding: 2px;
+    cursor: pointer;
+}
+
+.bx-edit-alt{
+    border-color: var(--color_gray_text);
+    font-size: 1.7rem;
+    color:gray;
+    background-color: transparent;
+}

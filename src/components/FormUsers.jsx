@@ -45,7 +45,7 @@ const FormUsers = ({ createNewUsers, updateInfo, updateUserById, setUpdateInfo, 
 
     return (
         <form className="form" onSubmit={handleSubmit(submit)}>
-           <h2 className="form_title">Edit Users</h2>
+           <h2 className="form_title">{updateInfo ? 'Edit User' : 'New User'}</h2>
            <div className="form_x" onClick={handleCloseForm}>X</div>
             <div className="form_section">
                 <label className="form_label" htmlFor="first_name">First Name</label>
@@ -67,7 +67,7 @@ const FormUsers = ({ createNewUsers, updateInfo, updateUserById, setUpdateInfo, 
                 <label className="form_label" htmlFor="birthday">Birthday</label>
                 <input className="form_input" {...register('birthday')} id="birthday" type="date" />
             </div>
-            <button className="form_btn">{updateInfo ? 'Update' : 'Create'}</button>
+            <button className="form_btn">{updateInfo ? 'Save Changes' : 'Add new user'}</button>
         </form>
     )
 }

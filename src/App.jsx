@@ -29,11 +29,13 @@ function App() {
   }
 
   return (
-    <div>
-      <h1>Users CRUD</h1>
-      <button onClick={handleOpenForm}>
-        <h2>Create new user</h2>
-      </button>
+    <div className='app'>
+      <header className='header'>
+        <h1 className='header_title'>Users</h1>
+        <button className='header_btn' onClick={handleOpenForm}>
+          <h2 className='header_title-btn'>Create new user</h2>
+        </button>
+      </header>
       <div className={`form_container ${isCloseForm && 'form_close'}`}>
         <FormUsers
           createNewUsers={createNewUsers}
@@ -43,7 +45,7 @@ function App() {
           setIsCloseForm={setIsCloseForm}
         />
       </div>
-      <div>
+      <div className='usercard_container'>
         {
           users?.map(user => (
             <UserCard

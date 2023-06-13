@@ -5,6 +5,7 @@
     background-color: #0004;
     backdrop-filter: blur(2px);
     top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +14,7 @@
 
 .form{
     background-color: white;
-    padding: 1rem 1.5rem 2rem;
+    padding: 1rem 1.5rem 1rem;
     border-radius: 0.7rem;
     width: 100%;
     max-width: 350px;
@@ -27,7 +28,7 @@
 .form_title{
     text-align: center;
     color: rgb(3, 3, 73);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     font-weight: 700;
 }
 
@@ -48,7 +49,7 @@
 .form_section  {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.2rem;
     margin-bottom: 1.2rem;
 }
 
@@ -60,8 +61,8 @@
 .form_input{
     border:1px solid #ccc;
     border-radius: 0.5rem;
-    font-weight: 400;
-    font-size:0.8rem;
+    font-weight: 500;
+    font-size:1rem;
     padding: 0.5rem 1rem;
 }
 
@@ -69,13 +70,17 @@
     display: block;
     width: 100%;
     font-size: 1.2rem;
+    font-weight: 600;
     padding: 0.2rem 1rem;
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
     border: none;
-    background-color: cornflowerblue;
+    background-color: var(--color_btn);
+    color: var(--color_text);
     cursor: pointer;
     filter: grayscale(0.5);
-    margin-top: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.3rem;
+    box-shadow: var(--shadow_btn);
 }
 
 .form_btn:hover{
