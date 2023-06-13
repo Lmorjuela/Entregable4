@@ -31,7 +31,7 @@ function App() {
   return (
     <div className='app'>
       <header className='header'>
-        <h1 className='header_title'>Users</h1>
+        <h1 className='header_title'>USERS</h1>
         <button className='header_btn' onClick={handleOpenForm}>
           <h2 className='header_title-btn'>Create new user</h2>
         </button>

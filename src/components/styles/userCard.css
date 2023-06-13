@@ -84,3 +84,10 @@
     color:gray;
     background-color: transparent;
 }
+
+@media(max-width:700px){
+    .userCard{
+        width:300px;
+    }
+
+}
